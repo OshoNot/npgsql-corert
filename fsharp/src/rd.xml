@@ -1,0 +1,58 @@
+<Directives>
+    <Application>
+        <!-- Directives for Npgsql -->
+        <Assembly Name="Npgsql" Dynamic="Required All">
+            <Type Name="Npgsql.TypeHandling.NpgsqlTypeHandler" Dynamic="Required All">
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.ArraySegment`1[[System.Char, System.Runtime]], System.Runtime" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.SByte, System.Runtime" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.Byte, System.Runtime" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="NpgsqlTypes.NpgsqlDate, Npgsql" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="NpgsqlTypes.NpgsqlTimeSpan, Npgsql" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="NpgsqlTypes.NpgsqlDateTime, Npgsql" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.Collections.Specialized.BitVector32, System.Collections.Specialized" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.ArraySegment`1[[System.Byte, System.Runtime]], System.Runtime" />
+                </Method>
+            </Type>
+        </Assembly>
+        <!-- Directives for F# 'printfn' -->
+        <Assembly Name="FSharp.Core" Dynamic="Required All"> 
+            <Type Name="Microsoft.FSharp.Core.PrintfImpl+Specializations`3[[System.Object,System.Private.CoreLib],[System.Object,System.Private.CoreLib],[System.Object,System.Private.CoreLib]]" Dynamic="Required All">
+                <Method Name="Final1" Dynamic="Required">
+                    <GenericArgument Name="System.Object, System.Private.CoreLib" />
+                </Method> 
+                <Method Name="FinalFastEnd1" Dynamic="Required">
+                    <GenericArgument Name="System.Object, System.Private.CoreLib" />
+                </Method>
+                <Method Name="FinalFastStart1" Dynamic="Required">
+                    <GenericArgument Name="System.Object, System.Private.CoreLib" />
+                </Method> 
+                <Method Name="FinalFast1" Dynamic="Required">
+                    <GenericArgument Name="System.Object, System.Private.CoreLib" />
+                </Method> 
+                <Method Name="Final2" Dynamic="Required">
+                    <GenericArgument Name="System.Object, System.Private.CoreLib" />
+                    <GenericArgument Name="System.Object, System.Private.CoreLib" />
+                </Method> 
+                <Method Name="FinalFastEnd2" Dynamic="Required">
+                    <GenericArgument Name="System.Object, System.Private.CoreLib" />
+                    <GenericArgument Name="System.Object, System.Private.CoreLib" />
+                </Method>
+            </Type> 
+        </Assembly>
+    </Application>
+</Directives>

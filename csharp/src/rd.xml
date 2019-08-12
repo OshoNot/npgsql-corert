@@ -1,0 +1,33 @@
+<Directives>
+    <Application>
+        <!-- Directives for Npgsql -->
+        <Assembly Name="Npgsql" Dynamic="Required All">
+            <Type Name="Npgsql.TypeHandling.NpgsqlTypeHandler" Dynamic="Required All">
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.ArraySegment`1[[System.Char, System.Runtime]], System.Runtime" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.SByte, System.Runtime" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.Byte, System.Runtime" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="NpgsqlTypes.NpgsqlDate, Npgsql" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="NpgsqlTypes.NpgsqlTimeSpan, Npgsql" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="NpgsqlTypes.NpgsqlDateTime, Npgsql" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.Collections.Specialized.BitVector32, System.Collections.Specialized" />
+                </Method>
+                <Method Name="WriteWithLengthInternal" Dynamic="Required All">
+                    <GenericArgument Name="System.ArraySegment`1[[System.Byte, System.Runtime]], System.Runtime" />
+                </Method>
+            </Type>
+        </Assembly>
+    </Application>
+</Directives>

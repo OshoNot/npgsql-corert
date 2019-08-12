@@ -1,0 +1,36 @@
+#+TITLE: F# Version
+
+* Purpose
+
+The purpose of this project is to demonstrate the usage of the coreRT compiler along with Npgsql by perfoming
+some CRUD functions in the database.
+
+* Requirements
+
+- Ubuntu 18.04
+- .NET Core 2.2
+- At least 6GB of memory for the docker enviroment
+- Docker & docker-compose
+
+* How to run
+
+#+BEGIN_SRC shell
+docker-compose up
+#+END_SRC
+
+The expected output is:
+#+BEGIN_EXAMPLE
+prototype_1  | Name: foo
+prototype_1  | Name: wo
+prototype_1  | New record inserted.
+prototype_1  | Name: foo
+prototype_1  | Name: wo
+prototype_1  | Name: newUser
+prototype_1  | Record name 'foo' deleted.
+prototype_1  | Name: wo
+prototype_1  | Name: newUser
+prototype_1  | Record name 'wo' updated to 'updatedUser'.
+prototype_1  | Name: newUser
+prototype_1  | Name: updatedUser
+prototype_1  | Test Finished
+#+END_EXAMPLE

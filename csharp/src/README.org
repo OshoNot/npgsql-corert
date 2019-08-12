@@ -1,0 +1,24 @@
+#+TITLE: C# Prototype
+
+* Purpose
+
+The purpose of this prototype is to demonstrate the usage of the coreRT along with Npgsql by just
+openning a single database connection.
+
+* Requirements
+
+- Ubuntu 18.04
+- .NET Core 2.2
+- At least 6GB of memory for the docker enviroment
+- Docker & docker-compose
+
+* How to run
+
+#+BEGIN_SRC shell
+docker-compose up
+#+END_SRC
+
+The expected output doesn't show any exception message and is:
+#+BEGIN_EXAMPLE
+prototype_1  | Test Finished
+#+END_EXAMPLE
